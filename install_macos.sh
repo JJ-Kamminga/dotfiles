@@ -1,4 +1,4 @@
-ln -svi "~/dotfiles/macos/.bash_profile" ~
+ln -svi ~/dotfiles/bash/.bash_profile ~
 
 # for DOTFILE in 'macos'
 # do
