@@ -22,8 +22,17 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/jkamminga/.zprofile
 eval "$(/usr/local/bin/brew shellenv)"
 
-# git
+# homebrew installations
 brew install git
+brew install node
+
+# homebrew cask installations
+brew install --cask iterm2
+brew install --cask firefox
+brew install --cask spotify
+brew install --cask visual-studio-code
 
 # oh-my-zsh
 source zsh/install_oh-my-zsh.sh
+# install general shell utilities
+source shell/install.sh
