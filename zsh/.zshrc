@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias reload="source /Users/jkamminga/.zshrc"
+alias wallpaper="bash /Users/jkamminga/dotfiles/macos/wallpaper.sh"
 
 ### Sdu
 source "$HOME/.bash-custom/asp.bash"

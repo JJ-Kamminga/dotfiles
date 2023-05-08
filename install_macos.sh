@@ -36,3 +36,6 @@ brew install --cask visual-studio-code
 source zsh/install_oh-my-zsh.sh
 # install general shell utilities
 source shell/install.sh
+
+# customisation
+wallpaper

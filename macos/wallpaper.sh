@@ -1,0 +1,1 @@
+osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"/Users/jkamminga/dotfiles/assets/wallpapers/john-towner-paris.jpg\" as POSIX file"
