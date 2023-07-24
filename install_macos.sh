@@ -22,15 +22,24 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/jkamminga/.zprofile
 eval "$(/usr/local/bin/brew shellenv)"
 
-# homebrew installations
+# homebrew
+## installations
 brew install git
 brew install node
 
-# homebrew cask installations
-brew install --cask iterm2
-brew install --cask firefox
-brew install --cask spotify
-brew install --cask visual-studio-code
+## casks
+# these only need to be enabled on first system install
+# brew install --cask iterm2
+# brew install --cask firefox
+# brew install --cask spotify
+# brew install --cask visual-studio-code
+
+read -e -p "Install Ruby?" choice [[ "$choice" == [Yy]* ]]\
+    &&\
+        brew install chruby\
+        brew install ruby-install\
+        ruby-install ruby\
+    || echo "skipping Ruby installation."
 
 # oh-my-zsh
 source zsh/install_oh-my-zsh.sh
@@ -38,4 +47,5 @@ source zsh/install_oh-my-zsh.sh
 source shell/install.sh
 
 # customisation
-wallpaper
+## wallpaper
+bash /Users/jkamminga/dotfiles/macos/wallpaper.sh

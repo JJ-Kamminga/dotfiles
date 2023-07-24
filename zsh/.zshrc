@@ -126,3 +126,6 @@ eval "$(zoxide init zsh)"
 
 # other
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ruby
+[ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
