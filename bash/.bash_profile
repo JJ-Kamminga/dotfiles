@@ -1,4 +1,4 @@
-for DOTFILE in `find /Users/jkamminga/dotfiles/bash/source`
+for DOTFILE in `find ~/dotfiles/bash/source`
 do
   if [ -f "$DOTFILE" ]; then
     source "$DOTFILE"
