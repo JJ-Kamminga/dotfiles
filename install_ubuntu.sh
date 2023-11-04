@@ -10,8 +10,8 @@ source ~/.bash_profile
 # git
 bash git/set_gitconfig.sh
 
-# debian defaults
-# source debian/debiandefaults.sh
+# ubuntu defaults
+source ubuntu/ubuntudefaults.sh
 
 ###############################################################################
 # Installations                                                               #
@@ -22,3 +22,5 @@ sudo apt-get install git-all
 
 # Tweaks
 sudo apt install gnome-tweaks
+
+#

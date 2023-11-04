@@ -6,6 +6,6 @@ My dotfiles
 1. Clone this repository in user directory.
 2. `bash install_macos.sh`
 
-### Debian (Ubuntu)
+### Ubuntu
 1. Clone this repository in user directory.
-2. `bash install_debian.sh`
+2. `bash install_ubuntu.sh`
