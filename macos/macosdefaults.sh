@@ -8,6 +8,8 @@ mkdir -p ~/documents/afbeeldingen/screenshots
 defaults write com.apple.screencapture location -string "~/documents/afbeeldingen/screenshots"
 ## Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+## Disable mouse acceleration
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
 ###############################################################################
 # Activity Monitor                                                            #
