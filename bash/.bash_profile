@@ -5,3 +5,7 @@ do
     echo succesfully sourced "$DOTFILE"
   fi
 done
+
+# GNOME doesn't source .bashrc by default
+source ~/.bashrc
+echo succesfully sourced ~/.bashrc
