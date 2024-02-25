@@ -11,3 +11,6 @@ sudo apt install mono-devel
 
 # Settings
 snap set core snapshots.automatic.retention=no 
+
+# Tweaks
+sudo apt install gnome-tweaks
