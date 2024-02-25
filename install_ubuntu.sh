@@ -8,10 +8,10 @@ ln -svi ~/dotfiles/bash/.bash_profile ~
 source ~/.bash_profile
 
 # git
-bash git/set_gitconfig.sh
+bash ~/dotfiles/git/set_gitconfig.sh
 
 # ubuntu defaults
-source ubuntu/ubuntudefaults.sh
+source ~/dotfiles/ubuntu/ubuntudefaults.sh
 
 ###############################################################################
 # Installations                                                               #
@@ -27,4 +27,4 @@ sudo apt-get install git-all
 sudo apt install gnome-tweaks
 
 # install general shell utilities
-source shell/install.sh
+source ~/dotfiles/shell/install.sh

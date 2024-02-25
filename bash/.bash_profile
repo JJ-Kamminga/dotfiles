@@ -9,3 +9,5 @@ do
     echo succesfully sourced "$DOTFILE"
   fi
 done
+
+eval "$(zoxide init bash)"
