@@ -106,8 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias reload="source /Users/jkamminga/.zshrc"
-alias wallpaper="bash /Users/jkamminga/dotfiles/macos/wallpaper.sh"
+alias reload="source $HOME/.zshrc"
+alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
 
 ### Sdu
 # source "$HOME/.bash-custom/asp.bash"
