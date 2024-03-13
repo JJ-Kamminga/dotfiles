@@ -131,6 +131,5 @@ eval "$(zoxide init zsh)"
 # ruby
 [ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="$HOME/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+# rancher desktop
+source ~/dotfiles/bash/source/.rd
