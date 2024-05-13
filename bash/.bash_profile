@@ -10,4 +10,7 @@ do
   fi
 done
 
+# zoxide
 eval "$(zoxide init bash)"
+# fnm
+eval "`fnm env`"

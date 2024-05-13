@@ -17,8 +17,9 @@ source ~/dotfiles/ubuntu/ubuntudefaults.sh
 # Installations                                                               #
 ###############################################################################
 
-# nvm
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# fnm (faster node version manager)
+curl -fsSL https://fnm.vercel.app/install | bash
+# todo: automatically add to path
 
 # Git
 sudo apt-get install git-all

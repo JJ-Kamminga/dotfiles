@@ -1,3 +1,6 @@
+# uncomment this and the last line to get zsh boot analytics
+# zmodload zsh/zprof
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -106,13 +109,14 @@ plugins=(git)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias reload="source $HOME/.zshrc"
 alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
+alias nvm='fnm'
 
 ### Sdu
 # source "$HOME/.bash-custom/asp.bash"
 # export PATH="/usr/local/opt/helm@2/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# fnm
+eval "`fnm env`"
 
 export PATH="go/bin:$PATH"
 
@@ -139,3 +143,6 @@ eval "$(zoxide init zsh)"
 
 # rancher desktop
 source ~/dotfiles/bash/source/.rd
+
+# uncomment this and the first line to get zsh boot analytics
+# zprof
