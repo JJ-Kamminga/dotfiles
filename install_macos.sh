@@ -31,6 +31,8 @@ eval "$(/usr/local/bin/brew shellenv)"
 ## installations
 brew install git
 brew install node
+## cli utilities
+brew install bat
 
 ## casks
 # these only need to be enabled on first system install

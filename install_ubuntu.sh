@@ -27,6 +27,8 @@ sudo apt-get install git-all
 # install general shell utilities
 source ~/dotfiles/shell/install.sh
 
+sudo apt install bat
+
 # zsh
 source ~/dotfiles/ubuntu/zsh.sh
 source ~/dotfiles/zsh/install_oh-my-zsh.sh

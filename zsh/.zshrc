@@ -110,6 +110,7 @@ plugins=(git)
 alias reload="source $HOME/.zshrc"
 alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
 alias nvm='fnm'
+alias cat='bat'
 
 ### Sdu
 # source "$HOME/.bash-custom/asp.bash"
