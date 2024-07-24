@@ -113,8 +113,11 @@ alias nvm='fnm'
 alias cat='bat'
 
 ### Sdu
+alias reset-java="export JAVA_HOME=`/usr/libexec/java_home`"
+
 # source "$HOME/.bash-custom/asp.bash"
 # export PATH="/usr/local/opt/helm@2/bin:$PATH"
+reset-java
 
 # fnm
 eval "`fnm env`"
@@ -147,3 +150,6 @@ source ~/dotfiles/bash/source/.rd
 
 # uncomment this and the first line to get zsh boot analytics
 # zprof
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/jkamminga/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

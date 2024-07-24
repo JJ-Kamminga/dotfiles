@@ -14,3 +14,7 @@ done
 eval "$(zoxide init bash)"
 # fnm
 eval "`fnm env`"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/jkamminga/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
