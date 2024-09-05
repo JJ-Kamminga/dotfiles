@@ -113,11 +113,8 @@ alias nvm='fnm'
 alias cat='bat'
 
 ### Sdu
-alias reset-java="export JAVA_HOME=`/usr/libexec/java_home`"
-
 # source "$HOME/.bash-custom/asp.bash"
 # export PATH="/usr/local/opt/helm@2/bin:$PATH"
-reset-java
 
 # fnm
 eval "`fnm env`"
@@ -153,3 +150,7 @@ source ~/dotfiles/bash/source/.rd
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/jkamminga/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

@@ -41,12 +41,22 @@ brew install bat
 # brew install --cask spotify
 # brew install --cask visual-studio-code
 
+# sdkman
+curl -s "https://get.sdkman.io"
+
+read -e -p "Install Java 17 + maven 3.9.8 (via SDKMAN)?" choice [[ "$choice" == [Yy]* ]]\
+    &&\
+        sdk install java 17.0.11-amzn \
+        sdk install maven 3.9.8 \
+    || echo "skipping Java installation."
+
 read -e -p "Install Ruby?" choice [[ "$choice" == [Yy]* ]]\
     &&\
         brew install chruby\
         brew install ruby-install\
         ruby-install ruby\
     || echo "skipping Ruby installation."
+
 
 # oh-my-zsh
 source zsh/install_oh-my-zsh.sh
