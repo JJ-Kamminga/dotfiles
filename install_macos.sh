@@ -33,6 +33,9 @@ brew install git
 brew install node
 ## cli utilities
 brew install bat
+brew install coreutils
+## macos utilities
+brew install bluesnooze
 
 ## casks
 # these only need to be enabled on first system install

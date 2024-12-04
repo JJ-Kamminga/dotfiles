@@ -111,9 +111,11 @@ alias reload="source $HOME/.zshrc"
 alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
 alias nvm='fnm'
 alias cat='bat'
+alias week='date +%V'
+alias check='git checkout'
 
 ### Sdu
-# source "$HOME/.bash-custom/asp.bash"
+source "$HOME/.bash-custom/asp.bash"
 # export PATH="/usr/local/opt/helm@2/bin:$PATH"
 
 # fnm
