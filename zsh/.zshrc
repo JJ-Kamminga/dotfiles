@@ -115,11 +115,15 @@ alias week='date +%V'
 alias check='git checkout'
 
 ### Sdu
-source "$HOME/.bash-custom/asp.bash"
+# source "$HOME/.bash-custom/asp.bash"
 # export PATH="/usr/local/opt/helm@2/bin:$PATH"
 
 # fnm
-eval "`fnm env`"
+FNM_PATH="/home/jakob/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/jakob/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
 
 export PATH="go/bin:$PATH"
 
@@ -156,3 +160,4 @@ export PATH="/Users/jkamminga/.rd/bin:$PATH"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
