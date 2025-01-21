@@ -107,12 +107,18 @@ plugins=(git)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias reload="source $HOME/.zshrc"
+# os
 alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
+# git
+alias check='git checkout'
+# languages
+alias python3='python'
 alias nvm='fnm'
+# shell
+alias reload="source $HOME/.zshrc"
 alias cat='bat'
 alias week='date +%V'
-alias check='git checkout'
+alias x='clear'
 
 ### Sdu
 # source "$HOME/.bash-custom/asp.bash"
