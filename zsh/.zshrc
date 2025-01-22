@@ -112,7 +112,7 @@ alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
 # git
 alias check='git checkout'
 # languages
-alias python3='python'
+alias python='python3.11'
 alias nvm='fnm'
 # shell
 alias reload="source $HOME/.zshrc"
@@ -125,11 +125,7 @@ alias x='clear'
 # export PATH="/usr/local/opt/helm@2/bin:$PATH"
 
 # fnm
-FNM_PATH="/home/jakob/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/jakob/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
+eval "$(fnm env)"
 
 export PATH="go/bin:$PATH"
 

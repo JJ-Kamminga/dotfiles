@@ -21,7 +21,7 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 
 # fnm (faster node version manager)
 curl -fsSL https://fnm.vercel.app/install | bash
-export PATH="/Users/jkamminga/Library/Application Support/fnm:$PATH"
+export PATH="$HOME/Library/Application Support/fnm:$PATH"
 
 # add to path
 (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/jkamminga/.zprofile
