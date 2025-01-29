@@ -111,8 +111,11 @@ plugins=(git)
 alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
 # git
 alias check='git checkout'
+alias add='git add .'
+alias push='git push'
 # languages
 alias python='python3.11'
+alias pya='source .venv/bin/activate'
 alias nvm='fnm'
 # shell
 alias reload="source $HOME/.zshrc"
@@ -121,8 +124,8 @@ alias week='date +%V'
 alias x='clear'
 
 ### Sdu
-# source "$HOME/.bash-custom/asp.bash"
-# export PATH="/usr/local/opt/helm@2/bin:$PATH"
+source "$HOME/.bash-custom/asp.bash"
+export PATH="/usr/local/opt/helm@2/bin:$PATH"
 
 # fnm
 eval "$(fnm env)"
