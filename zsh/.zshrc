@@ -115,7 +115,7 @@ alias add='git add .'
 alias push='git push'
 # languages
 alias python='python3.11'
-alias pya='source .venv/bin/activate'
+alias activate='source .venv/bin/activate'
 alias nvm='fnm'
 # shell
 alias reload="source $HOME/.zshrc"
@@ -166,3 +166,5 @@ export PATH="/Users/jkamminga/.rd/bin:$PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+
+export PATH=$PATH:/Users/jkamminga/.spicetify
