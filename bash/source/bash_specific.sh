@@ -1,17 +1,15 @@
-# Cross-platform environment variables
-export EDITOR="subl -w"
-export CLICOLOR=1
-export LSCOLORS=gxfxcxdxbxegedabagacad
-# Tell grep to highlight matches
-export GREP_OPTIONS='--color=auto'
-
+#!/bin/bash
 # Bash-specific settings
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
+
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
+
 # Do not autocomplete when accidentally pressing Tab on an empty line.
 shopt -s no_empty_cmd_completion
+
 # Check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
