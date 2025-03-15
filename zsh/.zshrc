@@ -1,8 +1,9 @@
 # uncomment this and the last line to get zsh boot analytics
 # zmodload zsh/zprof
 
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Source shared configurations
+source ~/dotfiles/shell/source/path.sh
+source ~/dotfiles/bash/source/.alias
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -125,12 +126,9 @@ alias x='clear'
 
 ### Sdu
 source "$HOME/.bash-custom/asp.bash"
-export PATH="/usr/local/opt/helm@2/bin:$PATH"
 
 # fnm
 eval "$(fnm env)"
-
-export PATH="go/bin:$PATH"
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -144,7 +142,6 @@ else
 fi
 
 # Zoxide
-export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
 
 # other
@@ -153,18 +150,9 @@ eval "$(zoxide init zsh)"
 # ruby
 [ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 
-# rancher desktop
-source ~/dotfiles/bash/source/.rd
-
 # uncomment this and the first line to get zsh boot analytics
 # zprof
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/jkamminga/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-
-export PATH=$PATH:/Users/jkamminga/.spicetify

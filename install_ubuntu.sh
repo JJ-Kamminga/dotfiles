@@ -1,4 +1,11 @@
 ###############################################################################
+# Setup                                                               #
+###############################################################################
+
+# install general shell utilities
+source ~/dotfiles/shell/install.sh
+
+###############################################################################
 # Configs                                                                     #
 ###############################################################################
 # bash
@@ -21,12 +28,7 @@ source ~/dotfiles/ubuntu/ubuntudefaults.sh
 curl -fsSL https://fnm.vercel.app/install | bash
 # todo: automatically add to path
 
-# Git
-sudo apt-get install git-all
-
-# install general shell utilities
-source ~/dotfiles/shell/install.sh
-
+# bat
 sudo apt install bat
 
 # zsh
