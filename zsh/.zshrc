@@ -123,10 +123,6 @@ alias cat='bat'
 alias week='date +%V'
 alias x='clear'
 
-### Sdu
-source "$HOME/.bash-custom/asp.bash"
-export PATH="/usr/local/opt/helm@2/bin:$PATH"
-
 # fnm
 eval "$(fnm env)"
 
@@ -153,18 +149,11 @@ eval "$(zoxide init zsh)"
 # ruby
 [ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 
-# rancher desktop
-source ~/dotfiles/bash/source/.rd
-
 # uncomment this and the first line to get zsh boot analytics
 # zprof
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/jkamminga/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 
 export PATH=$PATH:/Users/jkamminga/.spicetify
