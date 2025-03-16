@@ -1,6 +1,20 @@
 ###############################################################################
+# Setup
+###############################################################################
+
+# zsh
+source ~/dotfiles/ubuntu/install_zsh.sh
+
+# Link our custom zshrc before oh-my-zsh installation
+ln -sf ~/dotfiles/zsh/.zshrc ~
+
+# Now install oh-my-zsh with KEEP_ZSHRC to preserve our config
+KEEP_ZSHRC=yes source ~/dotfiles/zsh/install_oh-my-zsh.sh
+
+###############################################################################
 # Configs                                                                     #
 ###############################################################################
+
 # bash
 ln -svi ~/dotfiles/bash/.bash_profile ~
 
@@ -19,7 +33,6 @@ source ~/dotfiles/ubuntu/ubuntudefaults.sh
 
 # fnm (faster node version manager)
 curl -fsSL https://fnm.vercel.app/install | bash
-# todo: automatically add to path
 
 # Git
 sudo apt-get install git-all
@@ -34,14 +47,14 @@ sudo apt-get install git-all
 	&& sudo apt update \
 	&& sudo apt install gh -y
 
-gh auth login
+if ! gh auth status | grep "Logged in to github.com as"; then
+    gh auth login
+fi
 
 # install general shell utilities
 source ~/dotfiles/shell/install.sh
 
 sudo apt install bat
 
-# zsh
-source ~/dotfiles/ubuntu/zsh.sh
-source ~/dotfiles/zsh/install_oh-my-zsh.sh
-ln -svi ~/dotfiles/zsh/.zshrc ~
+# finish
+source ~/.zshrc

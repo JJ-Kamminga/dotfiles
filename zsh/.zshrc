@@ -1,8 +1,11 @@
 # uncomment this and the last line to get zsh boot analytics
 # zmodload zsh/zprof
 
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Source shared configurations
+for config in path.sh prompt.sh; do
+    source ~/dotfiles/shell/source/$config
+    echo "sourced $config"
+done
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -140,7 +143,6 @@ else
 fi
 
 # Zoxide
-export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
 
 # other
@@ -155,5 +157,3 @@ eval "$(zoxide init zsh)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-export PATH=$PATH:/Users/jkamminga/.spicetify
