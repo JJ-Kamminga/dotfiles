@@ -9,8 +9,12 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # Shell
-alias reload='source ~/.bashrc 2>/dev/null || source ~/.zshrc 2>/dev/null'
-alias cat='bat'
+if [ -n "$BASH_VERSION" ]; then
+    alias reload='source ~/.bash_profile'
+else
+    alias reload='source ~/.zshrc'
+fi
+
 alias week='date +%V'
 alias x='clear'
 

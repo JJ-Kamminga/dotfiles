@@ -1,9 +1,15 @@
 # uncomment this and the last line to get zsh boot analytics
 # zmodload zsh/zprof
 
+echo "we are in .zshrc"
+
 # Source shared configurations
-source ~/dotfiles/shell/source/path.sh
-source ~/dotfiles/bash/source/.alias
+for config in path.sh env.sh prompt.sh aliases.sh; do
+    source ~/dotfiles/shell/source/$config
+done
+
+# Load oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,24 +111,14 @@ plugins=(git)
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# os
-alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
-# git
-alias check='git checkout'
-alias add='git add .'
-alias push='git push'
-# languages
-alias python='python3.11'
-alias activate='source .venv/bin/activate'
-alias nvm='fnm'
-# shell
-alias reload="source $HOME/.zshrc"
-alias cat='bat'
-alias week='date +%V'
-alias x='clear'
+# OS-specific aliases
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
+fi
 
 ### Sdu
 source "$HOME/.bash-custom/asp.bash"
@@ -130,15 +126,12 @@ source "$HOME/.bash-custom/asp.bash"
 # fnm
 eval "$(fnm env)"
 
-# Load oh-my-zsh
-source $ZSH/oh-my-zsh.sh
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 if [[ -f ~/.p10k.zsh ]]; then
   source ${ZSH_CUSTOM}/themes/powerlevel10k/powerlevel10k.zsh-theme
   source ~/.p10k.zsh
 else
-  echo "The file ~/.p10k.zsh does not exist or is not a regular file."
+  echo "The file ~/.p10k.zsh doesln not exist or is not a regular file."
 fi
 
 # Zoxide
