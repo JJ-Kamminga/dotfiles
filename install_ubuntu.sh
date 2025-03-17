@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ###############################################################################
 # Setup
 ###############################################################################
@@ -5,7 +7,14 @@
 # zsh
 source ~/dotfiles/ubuntu/install_zsh.sh
 
-# Link our custom zshrc before oh-my-zsh installation
+# Remove existing oh-my-zsh if present (to ensure clean installation)
+if [ -d "$HOME/.oh-my-zsh" ]; then
+    echo "Removing existing oh-my-zsh installation..."
+    rm -rf "$HOME/.oh-my-zsh"
+fi
+
+# Link our custom configs BEFORE oh-my-zsh installation
+echo "Setting up shell configurations..."
 ln -sf ~/dotfiles/zsh/.zshrc ~
 
 # Now install oh-my-zsh with KEEP_ZSHRC to preserve our config
@@ -31,12 +40,6 @@ source ~/dotfiles/ubuntu/ubuntudefaults.sh
 # Installations                                                               #
 ###############################################################################
 
-# fnm (faster node version manager)
-curl -fsSL https://fnm.vercel.app/install | bash
-
-# Git
-sudo apt-get install git-all
-
 # github
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
 	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
@@ -45,7 +48,7 @@ sudo apt-get install git-all
 	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
 	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
 	&& sudo apt update \
-	&& sudo apt install gh -y
+	&& sudo apt install -y gh
 
 if ! gh auth status | grep "Logged in to github.com as"; then
     gh auth login
@@ -54,7 +57,12 @@ fi
 # install general shell utilities
 source ~/dotfiles/shell/install.sh
 
-sudo apt install bat
+# bat (better cat)
+sudo apt install -y bat
+
+# fnm (faster node version manager)
+curl -fsSL https://fnm.vercel.app/install | bash
+
 
 # finish
 source ~/.zshrc
