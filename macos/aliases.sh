@@ -18,7 +18,11 @@ alias buninstall='brew uninstall'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
 
 # Clipboard
 alias pbp='pbpaste'
 alias pbc='pbcopy'
+
+# Ruby (macOS specific)
+alias chruby='[ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh'

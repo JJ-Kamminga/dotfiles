@@ -102,29 +102,8 @@ plugins=(git)
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# os
-alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
-# git
-alias check='git checkout'
-alias add='git add .'
-alias push='git push'
-# languages
-alias python='python3.11'
-alias activate='source .venv/bin/activate'
-alias nvm='fnm'
-# shell
-alias reload="source $HOME/.zshrc"
-alias cat='bat'
-alias week='date +%V'
-alias x='clear'
+# Aliases are now managed in ~/dotfiles/shell/source/load_aliases.sh
+# For a full list of active aliases, run `alias`
 
 # fnm
 eval "$(fnm env)"
