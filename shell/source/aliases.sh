@@ -7,9 +7,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # List directory contents
-alias ls='ls --color=auto'
-alias ll='ls -lah'
-alias la='ls -A'
+alias l='ls -lah'
 
 # Git
 alias check='git checkout'
@@ -22,8 +20,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Common shortcuts
-alias h='history'
-alias c='clear'
 alias x='clear'
 alias mkdir='mkdir -p'
 alias reload='exec "$SHELL"'
@@ -38,7 +34,3 @@ alias nvm='fnm'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-# Show human readable file sizes
-alias df='df -h'
-alias du='du -h'
