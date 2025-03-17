@@ -17,8 +17,11 @@ fi
 echo "Setting up shell configurations..."
 ln -sf ~/dotfiles/zsh/.zshrc ~
 
-# Now install oh-my-zsh with KEEP_ZSHRC to preserve our config
-KEEP_ZSHRC=yes source ~/dotfiles/zsh/install_oh-my-zsh.sh
+# Now install oh-my-zsh with KEEP_ZSHRC to preserve our config and prevent shell switch
+KEEP_ZSHRC=yes RUNZSH=no source ~/dotfiles/zsh/install_oh-my-zsh.sh
+
+# Install powerlevel10k after oh-my-zsh
+source ~/dotfiles/zsh/install_powerlevel10k.sh
 
 ###############################################################################
 # Configs                                                                     #
