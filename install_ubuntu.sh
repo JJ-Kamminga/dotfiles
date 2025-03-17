@@ -63,9 +63,5 @@ source ~/dotfiles/shell/install.sh
 # bat (better cat)
 sudo apt install -y bat
 
-# fnm (faster node version manager)
-curl -fsSL https://fnm.vercel.app/install | bash
-
-
 # finish
 source ~/.zshrc

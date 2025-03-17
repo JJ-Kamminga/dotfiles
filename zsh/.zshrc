@@ -104,9 +104,6 @@ plugins=(git)
 # Aliases are managed in ~/dotfiles/shell/source/load_aliases.sh
 # For a full list of active aliases, run `alias`
 
-# fnm
-eval "$(fnm env)"
-
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
