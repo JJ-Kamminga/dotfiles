@@ -2,9 +2,8 @@
 # zmodload zsh/zprof
 
 # Source shared configurations
-for config in path.sh prompt.sh; do
+for config in path.sh prompt.sh load_aliases.sh; do
     source ~/dotfiles/shell/source/$config
-    echo "sourced $config"
 done
 
 # Set name of the theme to load --- if set to "random", it will
@@ -102,34 +101,11 @@ plugins=(git)
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# os
-alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
-# git
-alias check='git checkout'
-alias add='git add .'
-alias push='git push'
-# languages
-alias python='python3.11'
-alias activate='source .venv/bin/activate'
-alias nvm='fnm'
-# shell
-alias reload="source $HOME/.zshrc"
-alias cat='bat'
-alias week='date +%V'
-alias x='clear'
+# Aliases are managed in ~/dotfiles/shell/source/load_aliases.sh
+# For a full list of active aliases, run `alias`
 
 # fnm
 eval "$(fnm env)"
-
-export PATH="go/bin:$PATH"
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -157,3 +133,10 @@ eval "$(zoxide init zsh)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# fnm
+FNM_PATH="/home/jakob/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/jakob/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
