@@ -11,16 +11,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias la='ls -A'
 
-# Git shortcuts
-alias g='git'
-alias ga='git add'
-alias gc='git commit'
-alias gp='git push'
-alias gl='git pull'
-alias gst='git status'
-alias gd='git diff'
-alias gco='git checkout'
-alias gb='git branch'
+# Git
 alias check='git checkout'
 alias add='git add .'
 alias push='git push'
