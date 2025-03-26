@@ -26,7 +26,7 @@ alias reload='exec "$SHELL"'
 alias week='date +%V'
 
 # Language shortcuts
-alias python='python3.11'
+alias python='python3.13.2'
 alias activate='source .venv/bin/activate'
 alias nvm='fnm'
 

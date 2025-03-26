@@ -60,8 +60,13 @@ fi
 # install general shell utilities
 source ~/dotfiles/shell/install.sh
 
+# python
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv python install
+
 # bat (better cat)
 sudo apt install -y bat
 
 # finish
+# shellcheck disable=SC3046
 source ~/.zshrc
