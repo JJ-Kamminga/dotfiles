@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# shellcheck disable=SC3046
+# shellcheck disable=SC1090
+
+
 ###############################################################################
 # Setup
 ###############################################################################
@@ -43,6 +47,13 @@ source ~/dotfiles/ubuntu/ubuntudefaults.sh
 # Installations                                                               #
 ###############################################################################
 
+# flatpak
+sudo apt install flatpak gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+# install general shell utilities
+source ~/dotfiles/shell/install.sh
+
 # github
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
 	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
@@ -57,15 +68,32 @@ if ! gh auth status | grep "Logged in to github.com as"; then
     gh auth login
 fi
 
-# install general shell utilities
-source ~/dotfiles/shell/install.sh
+# Tweaks
+sudo apt install gnome-tweaks
+
+# bat (better cat)
+sudo apt install -y bat
+
+# reload the shell
+source ~/.zshrc
+
+# install flatpaks
+flatpak install flathub com.vscodium.codium
+flatpak install flathub org.gimp.GIMP
+flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub com.spotify.Client
 
 # python
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install
 
-# bat (better cat)
-sudo apt install -y bat
+# Mono
+sudo apt install ca-certificates gnupg
+sudo gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/mono-official-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+sudo apt update
+
+sudo apt install mono-devel
 
 # Signal
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
