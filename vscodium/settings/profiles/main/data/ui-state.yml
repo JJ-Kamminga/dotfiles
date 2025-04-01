@@ -29,29 +29,9 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   emote
   Explorer\",\"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.extensio\
   ns\",\"themeIcon\":{\"id\":\"extensions-view-icon\"},\"name\":\"Extensions\",\
-  \"isBuiltin\":true,\"views\":[{\"when\":\"defaultExtensionViews\"},{\"when\":\
-  \"searchExtensionUpdates ||
-  searchOutdatedExtensions\"},{\"when\":\"recommendedExtensions &&
-  workbenchState != 'empty'\"},{\"when\":\"defaultExtensionViews && hasGallery
-  && !hasInstalledExtensions\"},{\"when\":\"searchExtensionUpdates ||
-  searchRecentlyUpdatedExtensions\"},{\"when\":\"recommendedExtensions\"},{\"wh\
-  en\":\"defaultExtensionViews && hasGallery &&
-  !config.extensions.showRecommendationsOnlyOnDemand &&
-  !sortByUpdateDate\"},{\"when\":\"defaultExtensionViews &&
-  hasInstalledExtensions\"},{\"when\":\"defaultExtensionViews &&
-  hasInstalledExtensions\"},{\"when\":\"searchMarketplaceExtensions\"},{\"when\
-  \":\"installedExtensions ||
-  searchInstalledExtensions\"},{\"when\":\"searchEnabledExtensions\"},{\"when\":\
-  \"searchDisabledExtensions\"},{\"when\":\"searchBuiltInExtensions\"},{\"when\
-  \":\"searchWorkspaceUnsupportedExtensions\"},{\"when\":\"builtInExtensions\"}\
-  ,{\"when\":\"builtInExtensions\"},{\"when\":\"builtInExtensions\"},{\"when\":\
-  \"searchUnsupportedWorkspaceExtensions\"},{\"when\":\"searchUnsupportedWorksp\
-  aceExtensions\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
-  virtualWorkspace\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
-  virtualWorkspace\"},{\"when\":\"searchDeprecatedExtensions\"}]},{\"id\":\"wor\
-  kbench.view.extension.test\",\"themeIcon\":{\"id\":\"test-view-icon\"},\"name\
-  \":\"Testing\",\"isBuiltin\":true,\"views\":[{\"when\":\"testing.providerCount
-  >
+  \"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.extension.test\",\"\
+  themeIcon\":{\"id\":\"test-view-icon\"},\"name\":\"Testing\",\"isBuiltin\":tr\
+  ue,\"views\":[{\"when\":\"testing.providerCount >
   0\"},{\"when\":\"testing.isTestCoverageOpen\"}]},{\"id\":\"workbench.view.ext\
   ension.references-view\",\"themeIcon\":{\"id\":\"references\"},\"name\":\"Ref\
   erences\",\"isBuiltin\":false,\"views\":[{\"when\":\"reference-list.isActive\
@@ -64,7 +44,7 @@ workbench.auxiliarybar.placeholderPanels: '[{"id":"workbench.panel.chat","themeI
   Edits","isBuiltin":true,"views":[{"when":"chatEditingParticipantRegistered ||
   chatSetupInstalled || !chatSetupHidden"}]}]'
 workbench.auxiliaryBar.size: "300"
-workbench.editor.languageDetectionOpenedLanguages.global: '[["jsonc",true],["shellscript",true],["json",true],["css",true],["typescriptreact",true],["typescript",true],["plaintext",true],["yaml",true]]'
+workbench.editor.languageDetectionOpenedLanguages.global: '[["jsonc",true],["json",true],["typescriptreact",true],["yaml",true],["robotframework",true],["shellscript",true],["plaintext",true],["typescript",true],["css",true]]'
 workbench.explorer.views.state.hidden: '[{"id":"outline","isHidden":false},{"id":"timeline","isHidden":false},{"id":"workbench.explorer.openEditorsView","isHidden":true},{"id":"workbench.explorer.emptyView","isHidden":false},{"id":"workbench.explorer.fileView","isHidden":false},{"id":"npm","isHidden":true},{"id":"robotcode.keywordsTreeView","isHidden":false}]'
 workbench.panel.alignment: center
 workbench.panel.chat.hidden: '[{"id":"workbench.panel.chat.view.copilot","isHidden":false}]'
@@ -86,6 +66,6 @@ workbench.view.debug.state.hidden: '[{"id":"workbench.debug.welcome","isHidden":
 workbench.view.extension.test.state.hidden: '[{"id":"workbench.view.testing","isHidden":false},{"id":"workbench.view.testCoverage","isHidden":false}]'
 workbench.view.extensions.state.hidden: '[{"id":"workbench.views.extensions.installed","isHidden":false},{"id":"workbench.views.extensions.searchOutdated","isHidden":false},{"id":"workbench.views.extensions.workspaceRecommendations","isHidden":false},{"id":"workbench.views.extensions.popular","isHidden":false},{"id":"workbench.views.extensions.searchRecentlyUpdated","isHidden":false},{"id":"workbench.views.extensions.otherRecommendations","isHidden":false},{"id":"extensions.recommendedList","isHidden":false},{"id":"workbench.views.extensions.enabled","isHidden":true},{"id":"workbench.views.extensions.disabled","isHidden":true},{"id":"workbench.views.extensions.marketplace","isHidden":false},{"id":"workbench.views.extensions.searchInstalled","isHidden":false},{"id":"workbench.views.extensions.searchEnabled","isHidden":false},{"id":"workbench.views.extensions.searchDisabled","isHidden":false},{"id":"workbench.views.extensions.searchBuiltin","isHidden":false},{"id":"workbench.views.extensions.searchWorkspaceUnsupported","isHidden":false},{"id":"workbench.views.extensions.builtinFeatureExtensions","isHidden":false},{"id":"workbench.views.extensions.builtinThemeExtensions","isHidden":false},{"id":"workbench.views.extensions.builtinProgrammingLanguageExtensions","isHidden":false},{"id":"workbench.views.extensions.untrustedUnsupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.untrustedPartiallySupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.virtualUnsupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.virtualPartiallySupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.deprecatedExtensions","isHidden":false}]'
 workbench.view.search.state.hidden: '[{"id":"workbench.view.search","isHidden":false}]'
-workbench.views.extensions.installed.size: "12"
+workbench.views.extensions.installed.size: "14"
 workbench.welcomePage.walkthroughMetadata: '[["ms-python.python#pythonWelcome",{"firstSeen":1742821577404,"stepIDs":["python.createPythonFolder","python.createPythonFile","python.installPythonWin8","python.installPythonMac","python.installPythonLinux","python.createEnvironment","python.runAndDebug","python.learnMoreWithDS"],"manaullyOpened":false}],["ms-python.python#pythonDataScienceWelcome",{"firstSeen":1742821577404,"stepIDs":["python.installJupyterExt","python.createNewNotebook","python.openInteractiveWindow","python.dataScienceLearnMore"],"manaullyOpened":false}]]'
 zokugun.cron-tasks: '{"version":"0.2.0"}'

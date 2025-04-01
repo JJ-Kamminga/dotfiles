@@ -17,8 +17,8 @@
   "application.shellEnvironmentResolutionTimeout": 25,
   "workbench.editor.empty.hint": "hidden",
   "editor.tabSize": 2,
-  "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "Blueberry Banana",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "window.autoDetectColorScheme": true,
   "explorer.confirmDragAndDrop": false,
   "editor.formatOnSave": true,
@@ -46,5 +46,6 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "standard",
   "python.analysis.autoImportCompletions": true,
-  "editor.accessibilityPageSize": 501
+  "editor.accessibilityPageSize": 501,
+  "workbench.iconTheme": "catppuccin-latte"
 }

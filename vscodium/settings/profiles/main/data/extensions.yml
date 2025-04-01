@@ -2,6 +2,10 @@ disabled:
   - id: mkhl.shfmt
     uuid: 00000000-0000-0000-0000-000000000000
 enabled:
+  - id: Catppuccin.catppuccin-vsc
+    uuid: 69264e4d-cd3b-468a-8f2b-e69673c7d864
+  - id: Catppuccin.catppuccin-vsc-icons
+    uuid: 625b9abd-dfac-405b-bf34-e65f46e2f22f
   - id: d-biehl.robotcode
     uuid: 319a594d-3cdf-4bad-a6dd-2a92ef7d4aa6
   - id: DavidAnson.vscode-markdownlint
