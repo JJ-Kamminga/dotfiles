@@ -1,8 +1,13 @@
 #!/bin/sh
 
-# First load shared aliases
+# Shared aliases
 if [ -f "$HOME/dotfiles/shell/source/aliases.sh" ]; then
     . "$HOME/dotfiles/shell/source/aliases.sh"
+fi
+
+# Secret aliases
+if [ -f "$HOME/dotfiles/shell/source/aliases_secret.sh" ]; then
+    . "$HOME/dotfiles/shell/source/aliases_secret.sh"
 fi
 
 # Detect platform and load specific aliases

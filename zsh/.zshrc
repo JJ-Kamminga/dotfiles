@@ -1,10 +1,6 @@
 # uncomment this and the last line to get zsh boot analytics
 # zmodload zsh/zprof
 
-# Source shared configurations
-for config in path.sh prompt.sh load_aliases.sh; do
-    source ~/dotfiles/shell/source/$config
-done
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -27,6 +23,11 @@ export ZSH="$HOME/.oh-my-zsh"
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+# Source shared configurations
+for config in path.sh prompt.sh load_aliases.sh; do
+    source ~/dotfiles/shell/source/$config
+done
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -109,6 +110,8 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 if [[ -f ~/.p10k.zsh ]]; then
+  echo "sourcing p10k"
+  # theme should be set already through oh-my-zsh (via the ZSH_THEME variable)
   source ${ZSH_CUSTOM}/themes/powerlevel10k/powerlevel10k.zsh-theme
   source ~/.p10k.zsh
 else
