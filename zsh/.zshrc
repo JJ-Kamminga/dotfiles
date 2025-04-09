@@ -110,7 +110,6 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 if [[ -f ~/.p10k.zsh ]]; then
-  echo "sourcing p10k"
   # theme should be set already through oh-my-zsh (via the ZSH_THEME variable)
   source ${ZSH_CUSTOM}/themes/powerlevel10k/powerlevel10k.zsh-theme
   source ~/.p10k.zsh
