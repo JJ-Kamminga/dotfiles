@@ -47,5 +47,12 @@
   "python.analysis.typeCheckingMode": "standard",
   "python.analysis.autoImportCompletions": true,
   "editor.accessibilityPageSize": 501,
-  "workbench.iconTheme": "catppuccin-latte"
+  "workbench.iconTheme": "catppuccin-mocha",
+  "java.debug.settings.stepping.skipClasses": [
+
+  ],
+  "[java]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "java.format.onType.enabled": false,
 }
