@@ -83,6 +83,9 @@ flatpak install flathub org.gimp.GIMP
 flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub com.spotify.Client
 
+# sdkman
+curl -s "https://get.sdkman.io"
+
 # python
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install

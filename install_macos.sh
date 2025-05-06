@@ -47,12 +47,6 @@ brew install bluesnooze
 # sdkman
 curl -s "https://get.sdkman.io"
 
-read -e -p "Install Java 17 + maven 3.9.8 (via SDKMAN)?" choice [[ "$choice" == [Yy]* ]]\
-    &&\
-        sdk install java 17.0.11-amzn \
-        sdk install maven 3.9.8 \
-    || echo "skipping Java installation."
-
 read -e -p "Install Ruby?" choice [[ "$choice" == [Yy]* ]]\
     &&\
         brew install chruby\
