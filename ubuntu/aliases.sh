@@ -22,3 +22,9 @@ alias sstatus='sudo systemctl status'
 # Common Ubuntu tools
 alias xo='xdg-open'
 alias open='xdg-open'  # Make it more Mac-like
+
+# Docker
+alias docker='podman'
+alias docker-compose='podman-compose'
+
+alias jmeter='cd ~/../../opt/apache-jmeter-5.6.3/bin && ./jmeter'

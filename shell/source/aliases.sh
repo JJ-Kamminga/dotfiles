@@ -22,7 +22,7 @@ alias egrep='egrep --color=auto'
 # Common shortcuts
 alias x='clear'
 alias mkdir='mkdir -p'
-alias reload='export ZSH_RELOAD=1 && source .zshrc'
+alias reload='export ZSH_RELOAD=1 && source ~/.zshrc'
 alias reset='exec "$SHELL"'
 alias week='date +%V'
 

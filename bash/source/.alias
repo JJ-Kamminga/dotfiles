@@ -6,6 +6,7 @@ alias ....="cd ../../.."
 alias reload="source ~/.bash_profile"
 alias nvm='fnm'
 alias cat='bat'
+alias docker='podman'
 
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
