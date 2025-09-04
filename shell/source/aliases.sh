@@ -14,6 +14,7 @@ alias checkout='git checkout'
 alias add='git add .'
 alias push='git push'
 alias pull='git pull'
+alias diff='git diff'
 alias fetch='git fetch'
 alias branch='git branch'
 
