@@ -43,4 +43,4 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # custom scripts
-alias j2grafana='~/dotfiles/shell/scripts/ansible_j2_to_grafana_json.sh'
+alias j2grafana='~/dotfiles/shell/bash/scripts/ansible_j2_to_grafana_json.sh'

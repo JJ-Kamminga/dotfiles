@@ -1,31 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 
-# shellcheck disable=SC3046
 # shellcheck disable=SC1090
-
 
 ###############################################################################
 # Setup
 ###############################################################################
 
 # zsh
-source ~/dotfiles/ubuntu/install_zsh.sh
+read -e -p "(Re)install and configure zsh?" choice [[ "$choice" == [Yy]* ]]\
+    &&\
+      . ~/dotfiles/ubuntu/install_zsh.sh\
+      . ~/dotfiles/shell/zsh/configure.sh\
+    || echo "skipping zsh step."
 
-# Remove existing oh-my-zsh if present (to ensure clean installation)
-if [ -d "$HOME/.oh-my-zsh" ]; then
-    echo "Removing existing oh-my-zsh installation..."
-    rm -rf "$HOME/.oh-my-zsh"
-fi
-
-# Link our custom configs BEFORE oh-my-zsh installation
-echo "Setting up shell configurations..."
-ln -sf ~/dotfiles/zsh/.zshrc ~
-
-# Now install oh-my-zsh with KEEP_ZSHRC to preserve our config and prevent shell switch
-KEEP_ZSHRC=yes RUNZSH=no source ~/dotfiles/zsh/install_oh-my-zsh.sh
-
-# Install powerlevel10k after oh-my-zsh
-source ~/dotfiles/zsh/install_powerlevel10k.sh
 
 ###############################################################################
 # Configs                                                                     #
@@ -34,14 +21,14 @@ source ~/dotfiles/zsh/install_powerlevel10k.sh
 # bash
 ln -svi ~/dotfiles/bash/.bash_profile ~
 
-# source bash, so the new profile can be used right away
-source ~/.bash_profile
+# . bash, so the new profile can be used right away
+. ~/.bash_profile
 
 # git
 bash ~/dotfiles/git/set_gitconfig.sh
 
 # ubuntu defaults
-source ~/dotfiles/ubuntu/ubuntudefaults.sh
+. ~/dotfiles/ubuntu/ubuntudefaults.sh
 
 ###############################################################################
 # Installations                                                               #
@@ -52,7 +39,7 @@ sudo apt install flatpak gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # install general shell utilities
-source ~/dotfiles/shell/install.sh
+. ~/dotfiles/shell/install.sh
 
 # github
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
@@ -64,10 +51,11 @@ source ~/dotfiles/shell/install.sh
 	&& sudo apt update \
 	&& sudo apt install -y gh
 
-if ! gh auth status | grep "Logged in to github.com as"; then
+if ! gh auth status | grep "Logged in to github.com"; then
     gh auth login
 fi
 
+sudo apt install git-delta
 sudo apt install gnome-tweaks
 sudo apt install -y bat
 sudo apt install tmux
@@ -97,10 +85,9 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] 
 sudo apt update && sudo apt install signal-desktop
 
 # reload the shell
-source ~/.zshrc
+. ~/.zshrc
 
 # install flatpaks
-flatpak install flathub com.vscodium.codium
 flatpak install flathub org.gimp.GIMP
 flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub com.spotify.Client
@@ -113,5 +100,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install
 
 # finish
-# shellcheck disable=SC3046
-source ~/.zshrc
+sudo apt autoremove
+
+echo "Done! It's recommended to restart your shell."

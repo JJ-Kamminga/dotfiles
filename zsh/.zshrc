@@ -126,7 +126,6 @@ eval "$(zoxide init zsh)"
 # ruby
 [ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 
-
 # fnm
 FNM_PATH="${HOME}/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
