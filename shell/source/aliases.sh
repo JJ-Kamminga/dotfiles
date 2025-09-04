@@ -29,6 +29,7 @@ alias reload='export ZSH_RELOAD=1 && source ~/.zshrc'
 alias reset='exec "$SHELL"'
 alias week='date +%V'
 
+# misc app aliases
 alias tw='task'
 
 # Language shortcuts
@@ -40,3 +41,6 @@ alias nvm='fnm'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+# custom scripts
+alias j2grafana='~/dotfiles/shell/scripts/ansible_j2_to_grafana_json.sh'

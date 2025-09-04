@@ -72,6 +72,9 @@ sudo apt install gnome-tweaks
 sudo apt install -y bat
 sudo apt install tmux
 
+snap install ghostty --classic
+ln -sf ~/dotfiles/terminal/ghostty/confg /.config/ghostty/config
+
 # nvim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 sudo rm -rf /opt/nvim
