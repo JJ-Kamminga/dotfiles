@@ -10,9 +10,12 @@ alias .....='cd ../../../..'
 alias l='ls -lah'
 
 # Git
-alias check='git checkout'
+alias checkout='git checkout'
 alias add='git add .'
 alias push='git push'
+alias pull='git pull'
+alias fetch='git fetch'
+alias branch='git branch'
 
 # Grep with color
 alias grep='grep --color=auto'
@@ -25,6 +28,8 @@ alias mkdir='mkdir -p'
 alias reload='export ZSH_RELOAD=1 && source ~/.zshrc'
 alias reset='exec "$SHELL"'
 alias week='date +%V'
+
+alias tw='task'
 
 # Language shortcuts
 # alias python='python3.13.2'

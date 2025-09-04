@@ -126,12 +126,6 @@ eval "$(zoxide init zsh)"
 # ruby
 [ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 
-# uncomment this and the first line to get zsh boot analytics
-# zprof
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # fnm
 FNM_PATH="${HOME}/.local/share/fnm"
@@ -139,3 +133,13 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="${FNM_PATH}:$PATH"
   eval "$(fnm env)"
 fi
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+# uncomment this and the first line to get zsh boot analytics
+# zprof

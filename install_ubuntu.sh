@@ -68,11 +68,31 @@ if ! gh auth status | grep "Logged in to github.com as"; then
     gh auth login
 fi
 
-# Tweaks
 sudo apt install gnome-tweaks
-
-# bat (better cat)
 sudo apt install -y bat
+sudo apt install tmux
+
+# nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+# lazyvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
+# taskwarrior
+sudo apt-get install taskwarrior
+ln -sf ~/dotfiles/.taskrc ~
+
+# Signal
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
+cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
+  sudo tee /etc/apt/sources.list.d/signal-xenial.list
+
+sudo apt update && sudo apt install signal-desktop
 
 # reload the shell
 source ~/.zshrc
@@ -89,15 +109,6 @@ curl -s "https://get.sdkman.io"
 # python
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install
-
-# Signal
-wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
-cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
-
-echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
-  sudo tee /etc/apt/sources.list.d/signal-xenial.list
-
-sudo apt update && sudo apt install signal-desktop
 
 # finish
 # shellcheck disable=SC3046
