@@ -140,6 +140,5 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-
 # uncomment this and the first line to get zsh boot analytics
 # zprof
