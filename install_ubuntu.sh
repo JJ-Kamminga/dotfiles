@@ -59,9 +59,8 @@ sudo apt install git-delta
 sudo apt install gnome-tweaks
 sudo apt install -y bat
 
-sudo apt install fastfetch
-sudo apt install hyfetch3
-ln -sf ~/dotfiles/config/neowofetch/config.conf ~/.config/neowofetch/config.conf
+. ./ubuntu/install_scripts/fetch.sh
+. ./ubuntu/install_scripts/tmux.sh
 
 sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
