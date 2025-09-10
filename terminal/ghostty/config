@@ -44,7 +44,7 @@
 # gtk-titlebar = false
 
 window-decoration = none
-font-size = 9
+font-size = 14
 
 # theme
 theme = cyberpunk
