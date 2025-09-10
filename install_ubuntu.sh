@@ -58,7 +58,15 @@ fi
 sudo apt install git-delta
 sudo apt install gnome-tweaks
 sudo apt install -y bat
+
+sudo apt install fastfetch
+sudo apt install hyfetch3
+ln -sf ~/dotfiles/config/neowofetch/config.conf ~/.config/neowofetch/config.conf
+
 sudo apt install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+mkdir ~/.config/tmux
+ln -sf ~/dotfiles/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 
 snap install ghostty --classic
 ln -sf ~/dotfiles/terminal/ghostty/config ~/.config/ghostty/config

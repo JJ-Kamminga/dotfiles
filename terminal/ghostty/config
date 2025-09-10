@@ -42,5 +42,13 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 # gtk-titlebar = false
+
 window-decoration = none
+font-size = 9
+
+# theme
+theme = cyberpunk
+
+# maximize window on startup
+maximize
 
