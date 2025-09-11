@@ -13,5 +13,6 @@
 [ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
 [ -d "$HOME/go/bin" ] && PATH="$HOME/go/bin:$PATH"
 [ -d "$DOTFILES_DIR/bin" ] && PATH="$PATH:$DOTFILES_DIR/bin"
+[ -d "/usr/local/go/bin" ] && PATH=$PATH:/usr/local/go/bin
 
 export PATH 

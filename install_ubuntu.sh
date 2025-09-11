@@ -61,14 +61,12 @@ sudo apt install -y bat
 
 . ./ubuntu/install_scripts/fetch.sh
 . ./ubuntu/install_scripts/tmux.sh
+. ./ubuntu/install_scripts/ghostty.sh
 
 sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir ~/.config/tmux
 ln -sf ~/dotfiles/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
-
-snap install ghostty --classic
-ln -sf ~/dotfiles/terminal/ghostty/config ~/.config/ghostty/config
 
 # nvim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
