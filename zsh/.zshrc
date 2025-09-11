@@ -84,7 +84,7 @@ done
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(colored-man-pages last-working-dir taskwarrior urltools zoxide)
 
 # User configuration
 
@@ -117,9 +117,6 @@ if [[ -f ~/.p10k.zsh ]]; then
 else
   echo "The file ~/.p10k.zsh does not exist or is not a regular file."
 fi
-
-# Zoxide
-eval "$(zoxide init zsh)"
 
 # other
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
