@@ -1,0 +1,16 @@
+--2025-09-17 20:39:43--  https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.2.0-0-ppa1/ghostty_1.2.0-0.ppa1_amd64_25.04.deb
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/909827604/86a316ab-7022-45b9-a868-e160f03f2a9f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-09-17T19%3A32%3A02Z&rscd=attachment%3B+filename%3Dghostty_1.2.0-0.ppa1_amd64_25.04.deb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-09-17T18%3A31%3A35Z&ske=2025-09-17T19%3A32%3A02Z&sks=b&skv=2018-11-09&sig=39whOKPw2g4582PfOAOUK8PQEAUojv9DL75a9dPZbZE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1ODEzNDY4MywibmJmIjoxNzU4MTM0MzgzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.yt5q8HahjU3RPthi0HaxM-4Rbip_RmnnB0kfoA15ykA&response-content-disposition=attachment%3B%20filename%3Dghostty_1.2.0-0.ppa1_amd64_25.04.deb&response-content-type=application%2Foctet-stream [following]
+--2025-09-17 20:39:44--  https://release-assets.githubusercontent.com/github-production-release-asset/909827604/86a316ab-7022-45b9-a868-e160f03f2a9f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-09-17T19%3A32%3A02Z&rscd=attachment%3B+filename%3Dghostty_1.2.0-0.ppa1_amd64_25.04.deb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-09-17T18%3A31%3A35Z&ske=2025-09-17T19%3A32%3A02Z&sks=b&skv=2018-11-09&sig=39whOKPw2g4582PfOAOUK8PQEAUojv9DL75a9dPZbZE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1ODEzNDY4MywibmJmIjoxNzU4MTM0MzgzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.yt5q8HahjU3RPthi0HaxM-4Rbip_RmnnB0kfoA15ykA&response-content-disposition=attachment%3B%20filename%3Dghostty_1.2.0-0.ppa1_amd64_25.04.deb&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16572174 (16M) [application/octet-stream]
+Saving to: ‘STDOUT’
+
+-                                            30%[==========================>                                                                ]   4,79M  4,66MB/s    in 1,0s    
+
+
+Cannot write to ‘-’ (Success).

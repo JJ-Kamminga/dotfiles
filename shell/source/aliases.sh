@@ -17,6 +17,7 @@ alias pull='git pull'
 alias diff='git diff'
 alias fetch='git fetch'
 alias branch='git branch'
+alias save='git add . && git commit -m "generic commit message" && git push'
 
 # Grep with color
 alias grep='grep --color=auto'
