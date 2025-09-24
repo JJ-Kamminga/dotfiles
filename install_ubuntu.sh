@@ -77,10 +77,6 @@ sudo rm nvim-linux-x86_64.tar.gz
 # lazyvim fork
 ln -sf ~/dotfiles/config/nvim ~/.config
 
-# taskwarrior
-sudo apt-get install taskwarrior
-ln -sf ~/dotfiles/.taskrc ~
-
 # reload the shell
 . ~/.zshrc
 

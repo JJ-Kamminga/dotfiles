@@ -21,8 +21,7 @@ alias save='git add . && git commit -m "generic commit message" && git push'
 
 # Grep with color
 alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias rg='rgrep'
 
 # Common shortcuts
 alias x='clear'
@@ -46,3 +45,4 @@ alias mv='mv -i'
 
 # custom scripts
 alias j2grafana='~/dotfiles/shell/bash/scripts/ansible_j2_to_grafana_json.sh'
+alias jtl2topaths="awk -F',' '{print $14}' 500-errors-from-final-test.jtl | sed 's|.*.dmz.kb\.nl||g' > 500-errors-from-final-test-testdata.csv"

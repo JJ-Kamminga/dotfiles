@@ -84,7 +84,7 @@ done
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages last-working-dir taskwarrior urltools zoxide)
+plugins=(colored-man-pages last-working-dir urltools zoxide per-directory-history)
 
 # User configuration
 
