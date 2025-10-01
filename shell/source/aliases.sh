@@ -30,9 +30,6 @@ alias reload='export ZSH_RELOAD=1 && source ~/.zshrc'
 alias reset='exec "$SHELL"'
 alias week='date +%V'
 
-# misc app aliases
-alias tw='task'
-
 # Language shortcuts
 # alias python='python3.13.2'
 alias activate='source .venv/bin/activate'
