@@ -58,6 +58,7 @@ fi
 sudo apt install git-delta
 sudo apt install gnome-tweaks
 sudo apt install -y bat
+sudo apt install gawk
 
 . ./ubuntu/install_scripts/fetch.sh
 . ./ubuntu/install_scripts/tmux.sh
