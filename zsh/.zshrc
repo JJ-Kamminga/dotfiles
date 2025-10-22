@@ -139,3 +139,11 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # uncomment this and the first line to get zsh boot analytics
 # zprof
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

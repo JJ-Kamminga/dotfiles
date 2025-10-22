@@ -1,4 +1,5 @@
-require("jakob.remap")
+require("lazy").setup("plugins")
+require("config.remap")
 
 require("rose-pine").setup({
     variant = "auto", -- auto, main, moon, or dawn
