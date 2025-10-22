@@ -59,6 +59,7 @@ sudo apt install git-delta
 sudo apt install gnome-tweaks
 sudo apt install -y bat
 sudo apt install gawk
+sudo apt-get install ripgrep
 
 . ./ubuntu/install_scripts/fetch.sh
 . ./ubuntu/install_scripts/tmux.sh
