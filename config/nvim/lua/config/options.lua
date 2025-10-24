@@ -6,3 +6,4 @@ vim.opt.cursorline = true
 
 -- global scope
 vim.opt.autowrite = true
+vim.opt.clipboard = "x11"
