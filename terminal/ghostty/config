@@ -52,3 +52,4 @@ theme = cyberpunk
 # maximize window on startup
 maximize
 
+keybind = shift+enter=text:\x1b\r
