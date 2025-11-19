@@ -1,5 +1,6 @@
 require("config.lazy")
 require("config")
+require("lsp")
 
 -- buffer-scoped
 vim.opt.autoindent = true
