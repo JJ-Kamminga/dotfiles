@@ -9,3 +9,5 @@ shell/source/aliases_secret.sh
 *.rar
 *.tar
 *AppImage
+
+config/nvim/pack/*

@@ -24,6 +24,11 @@ alias save='git add . && git commit -m "generic commit message" && git push'
 
 # tmux
 alias tm='tmux'
+alias tma='tmux a'
+
+# nvim
+alias vi='nvim'
+alias v.='nvim .' 
 
 # Grep with color
 alias grep='grep --color=auto'
