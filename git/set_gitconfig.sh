@@ -15,3 +15,6 @@ git config --global interactive.diffFilter "delta --color-only"
 git config --global delta.navigate true
 git config --global delta.dark true
 git config --global merge.conflictstyle zdiff3
+
+git config --global alias.staged '!sh -c "(git diff --cached) && (git diff --cached --diff-filter=A --name-only | xargs -I {} sh -c '\''echo -e \"\n### Full content of new file: {} ###\n\" && cat {}'\'')"'
+

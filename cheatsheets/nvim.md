@@ -22,3 +22,14 @@ b   word backward
 ## Text object selection
 
 Can be used in visual mode or after an operator.
+
+## Windows
+
+Ctrl + w    window leader
+hjkl        navigate windows
+q           close
+
+## Tabs
+
+T           move window to new tab
+g + t/T         next/previous tab

@@ -21,6 +21,8 @@ read -e -p "(Re)install and configure zsh?" choice [[ "$choice" == [Yy]* ]]\
 # bash
 ln -svi ~/dotfiles/bash/.bash_profile ~
 
+# some test changes
+
 # . bash, so the new profile can be used right away
 . ~/.bash_profile
 
