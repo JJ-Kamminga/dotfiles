@@ -67,6 +67,7 @@ sudo apt-get install ripgrep
 . ./ubuntu/install_scripts/tmux.sh
 . ./ubuntu/install_scripts/ghostty.sh
 
+# tmux
 sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir ~/.config/tmux
@@ -78,10 +79,9 @@ ln -sf ~/dotfiles/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 # reload the shell
 . ~/.zshrc
 
-# install flatpaks
-flatpak install flathub org.gimp.GIMP
-flatpak install flathub md.obsidian.Obsidian
-flatpak install flathub com.spotify.Client
+# node
+curl -fsSL https://fnm.vercel.app/install | bash
+curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 # sdkman
 curl -s "https://get.sdkman.io"
