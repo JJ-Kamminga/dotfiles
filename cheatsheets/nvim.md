@@ -1,5 +1,11 @@
 # Neovim cheatsheet
 
+## Modes
+
+i           insert mode
+v           visual mode
+Ctrl + c    Escape to normal
+
 ## Operators
 
 d   delete
