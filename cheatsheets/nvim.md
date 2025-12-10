@@ -29,6 +29,11 @@ b   word backward
 
 Can be used in visual mode or after an operator.
 
+## Buffers 
+
+Ctrl + o    Go to previous open buffer, mark or search
+Ctrl + ^    Go to previous open buffer
+
 ## Windows
 
 Ctrl + w    window leader
