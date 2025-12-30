@@ -1,6 +1,7 @@
 require("lazy").setup("plugins")
 require("config.remap")
 require("config.options")
+require("config.autocommands")
 
 require("rose-pine").setup({
     variant = "auto", -- auto, main, moon, or dawn
