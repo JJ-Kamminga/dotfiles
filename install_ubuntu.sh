@@ -76,6 +76,9 @@ ln -sf ~/dotfiles/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 # nvim
 . ./ubuntu/install_scripts/nvim.sh
 
+# presenterm
+. ./ubuntu/install_scripts/presenterm.sh
+#
 # reload the shell
 . ~/.zshrc
 
