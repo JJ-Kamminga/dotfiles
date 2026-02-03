@@ -120,6 +120,7 @@ fi
 
 # other
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export _ZO_EXCLUDE_DIRS=$HOME:$HOME/*/bruno/*
 
 # ruby
 [ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
