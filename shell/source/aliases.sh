@@ -54,6 +54,5 @@ alias mv='mv -i'
 # custom scripts
 alias j2grafana='~/dotfiles/shell/bash/scripts/ansible_j2_to_grafana_json.sh'
 # shellcheck disable=SC2139
-alias jtl2topaths="awk -F',' '{print ${14}}' 500-errors-from-final-test.jtl | sed 's|.*.dmz.kb\.nl||g' > 500-errors-from-final-test-testdata.csv"
 alias jtlperf='~/dotfiles/shell/bash/scripts/jtl_performance_summary.sh'
 alias jtlstatus='~/dotfiles/shell/bash/scripts/jtl_status_summary.sh'
