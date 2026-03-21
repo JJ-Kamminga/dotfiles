@@ -1,3 +1,9 @@
+vim.api.nvim_create_autocmd('VimEnter', {
+  callback = function()
+    vim.cmd.Cheaty()
+  end,
+})
+
 local group = vim.api.nvim_create_augroup('WrapSettings', { clear = true })
 
 vim.api.nvim_create_autocmd('FileType', {

@@ -9,7 +9,7 @@ vim.opt.autowrite = true
 --vim.opt.clipboard = "x11"
 
 -- todo: move these to set file?
-vim.opt.guicursor = ""
+-- vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
