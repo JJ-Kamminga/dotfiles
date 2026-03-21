@@ -10,3 +10,7 @@ vim.keymap.set('n', 'gb', ':ls<CR>:b<space>', { noremap = true })
 vim.keymap.set("n", "<leader>pc", vim.cmd.Cheaty, { desc = 'View cheatsheet'})
 
 vim.keymap.set({'n', 'i', 'v'}, '<C-s>', '<Esc>:w<CR>', { desc = 'Save buffer' })
+
+vim.keymap.set({'n', 'i', 'v'}, '<C-a>', '<Esc>:%y<CR>', { desc = 'Select all' })
+
+vim.keymap.set("n", "<leader>fp", "<cmd>Telescope projects<cr>", { desc = 'Find projects' })
