@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   opts = {
     spec = {
-        { "<leader>c", desc = "   Diagnostics" },
+        { "<leader>d", desc = "   Diagnostics" },
         { "<leader>p", desc = "   Project" },
         { "<leader>h", desc = " 󰛢 Harpoon" },
         { "<leader>x", desc = "  Trouble" },

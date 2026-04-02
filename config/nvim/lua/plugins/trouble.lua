@@ -3,6 +3,14 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
     cmd = "Trouble",
+    init = function()
+        vim.api.nvim_create_autocmd("FileType", {
+            pattern = { "typescript", "typescriptreact" },
+            callback = function()
+                vim.cmd("Trouble symbols toggle focus=false win.position=right")
+            end,
+        })
+    end,
     keys = {
         {
             "<leader>xx",
@@ -15,12 +23,12 @@ return {
             desc = "Buffer Diagnostics (Trouble)",
         },
         {
-            "<leader>cs",
+            "<leader>ds",
             "<cmd>Trouble symbols toggle focus=false<cr>",
             desc = "Symbols (Trouble)",
         },
         {
-            "<leader>cl",
+            "<leader>dl",
             "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
             desc = "LSP Definitions / references / ... (Trouble)",
         },
