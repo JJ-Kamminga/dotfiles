@@ -27,7 +27,9 @@ alias tm='tmux'
 alias tma='tmux a'
 
 # nvim
+alias v='nvim'
 alias vi='nvim'
+alias vim='nvim'
 alias v.='nvim .' 
 
 # Grep with color

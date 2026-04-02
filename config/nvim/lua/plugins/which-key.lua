@@ -2,9 +2,12 @@ return {
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
+    spec = {
+        { "<leader>c", desc = "   Diagnostics" },
+        { "<leader>p", desc = "   Project" },
+        { "<leader>h", desc = " 󰛢 Harpoon" },
+        { "<leader>x", desc = "  Trouble" },
+    }
   },
   keys = {
     {
