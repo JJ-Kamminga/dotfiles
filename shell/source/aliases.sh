@@ -7,7 +7,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # List directory contents
-alias l='ls -lah'
+alias ls='eza -l --header --icons --group-directories-first'
 
 # List path
 alias showpath='echo "$PATH" | tr ":" "\n" | sort -u'

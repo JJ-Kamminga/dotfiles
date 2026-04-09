@@ -25,11 +25,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Source shared configurations
-for config in path.sh prompt.sh load_aliases.sh; do
-    source ~/dotfiles/shell/source/$config
-done
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -118,6 +113,11 @@ else
   echo "The file ~/.p10k.zsh does not exist or is not a regular file."
 fi
 
+# Source shared configurations
+for config in path.sh prompt.sh load_aliases.sh; do
+    source ~/dotfiles/shell/source/$config
+done
+
 # other
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export _ZO_EXCLUDE_DIRS=$HOME:$HOME/*/bruno/*
@@ -134,12 +134,8 @@ fi
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# uncomment this and the first line to get zsh boot analytics
-# zprof
+# opencode
+export PATH=${HOME}/.opencode/bin:$PATH
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
@@ -149,5 +145,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# opencode
-export PATH=${HOME}/.opencode/bin:$PATH
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# uncomment this and the first line to get zsh boot analytics
+# zprof
+
