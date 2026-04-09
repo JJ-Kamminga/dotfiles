@@ -118,6 +118,9 @@ for config in path.sh prompt.sh load_aliases.sh; do
     source ~/dotfiles/shell/source/$config
 done
 
+# make batcat use terminal colors
+export BAT_THEME="ansi"
+
 # other
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export _ZO_EXCLUDE_DIRS=$HOME:$HOME/*/bruno/*
