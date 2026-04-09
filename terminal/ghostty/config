@@ -47,7 +47,7 @@ window-decoration = none
 font-size = 14
 
 # theme
-theme = cyberpunk
+theme = dark:cyberpunk,light:BlulocoLight
 
 # maximize window on startup
 maximize
