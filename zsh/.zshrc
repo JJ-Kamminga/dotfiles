@@ -79,7 +79,7 @@ fi
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages last-working-dir urltools zoxide per-directory-history)
+plugins=(colored-man-pages last-working-dir urltools per-directory-history)
 
 # User configuration
 
@@ -101,7 +101,6 @@ plugins=(colored-man-pages last-working-dir urltools zoxide per-directory-histor
 # Aliases are managed in ~/dotfiles/shell/source/load_aliases.sh
 # For a full list of active aliases, run `alias`
 
-# Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -124,6 +123,7 @@ export BAT_THEME="ansi"
 # other
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export _ZO_EXCLUDE_DIRS=$HOME:$HOME/*/bruno/*
+eval "$(zoxide init zsh)"
 
 # ruby
 [ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
