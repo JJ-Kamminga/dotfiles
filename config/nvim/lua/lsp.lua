@@ -1,9 +1,15 @@
+local on_attach = function(client, bufnr)
+  vim.keymap.set('n', '<leader>fl', vim.lsp.buf.format, { buffer = bufnr, desc = "Format buffer with lsp" })
+  vim.keymap.set('n', '<leader>fc', function() require('conform').format() end, { desc = "Format buffer with conform" })
+end
+
 vim.lsp.config("lua_ls", {
     cmd = { "lua-language-server" },
     filetypes = { "lua" },
     root_markers = {
         ".luarc.json",
-        }
+        },
+    on_attach = on_attach,
     }
 )
 
@@ -18,7 +24,8 @@ vim.lsp.config("ts_ls", {
     --},
     init_options = {
       hostInfo = "neovim"
-    }
+    },
+    on_attach = on_attach,
 })
 
 

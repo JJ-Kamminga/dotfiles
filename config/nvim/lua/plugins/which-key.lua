@@ -7,6 +7,7 @@ return {
         { "<leader>p", desc = "   Project" },
         { "<leader>h", desc = " 󰛢 Harpoon" },
         { "<leader>x", desc = "  Trouble" },
+        { "<leader>f", desc = "  Format" },
     }
   },
   keys = {
