@@ -131,6 +131,9 @@ eval "$(zoxide init zsh)"
 # rust
 . "$HOME/.cargo/env"
 
+# docker
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
+
 # fnm
 FNM_PATH="${HOME}/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
