@@ -125,8 +125,9 @@ export BAT_THEME="ansi"
 export _ZO_EXCLUDE_DIRS=$HOME:$HOME/*/bruno/*
 eval "$(zoxide init zsh)"
 
-# ruby
-[ -d "/usr/local/Cellar/chruby" ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
+# rbenv/ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # rust
 . "$HOME/.cargo/env"
@@ -161,3 +162,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # uncomment this and the first line to get zsh boot analytics
 # zprof
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
