@@ -67,6 +67,13 @@ sudo apt install -y bat
 . ./ubuntu/install_scripts/tmux.sh
 . ./ubuntu/install_scripts/ghostty.sh
 
+# signal desktop
+curl https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg;
+cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+curl -o signal-desktop.sources https://updates.signal.org/static/desktop/apt/signal-desktop.sources;
+cat signal-desktop.sources | sudo tee /etc/apt/sources.list.d/signal-desktop.sources > /dev/null
+sudo apt update && sudo apt install signal-desktop
+
 # tmux
 sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
