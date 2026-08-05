@@ -142,6 +142,7 @@ if [ -d "$FNM_PATH" ]; then
   eval "$(fnm env)"
 fi
 
+# nvim
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 # opencode
@@ -153,7 +154,11 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
+IDEA_PATH="/opt/idea-IU-262.8665.337/bin"
+if [ -d "$IDEA_PATH" ]; then
+    export PATH="${IDEA_PATH}:$PATH"
+fi 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -161,7 +166,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # uncomment this and the first line to get zsh boot analytics
 # zprof
-
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
