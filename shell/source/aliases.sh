@@ -56,3 +56,4 @@ alias j2grafana='~/dotfiles/shell/bash/scripts/ansible_j2_to_grafana_json.sh'
 # shellcheck disable=SC2139
 alias jtlperf='~/dotfiles/shell/bash/scripts/jtl_performance_summary.sh'
 alias jtlstatus='~/dotfiles/shell/bash/scripts/jtl_status_summary.sh'
+alias fetchlogs='~/Documents/scripts/fetchlogs.sh'
