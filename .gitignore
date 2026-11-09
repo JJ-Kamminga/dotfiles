@@ -1,7 +1,7 @@
 .DS_Store
 *.swp
 
-shell/source/aliases_secret.sh
+**/*/aliases_secret.sh
 
 *.deb
 *.zip
@@ -11,4 +11,4 @@ shell/source/aliases_secret.sh
 *.tar
 *AppImage
 
-config/nvim/pack/*
+.config/nvim/pack/*
