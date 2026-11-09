@@ -1,0 +1,11 @@
+{
+	"preferences": {
+		"typescript": true,
+		"linter": "eslint",
+		"eslint": true,
+		"reactCompiler": true,
+		"tailwind": false,
+		"srcDir": true,
+		"app": true
+	}
+}

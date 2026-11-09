@@ -1,0 +1,34 @@
+[Print Settings]
+cups-ColorModel=RGB
+default-source=Auto
+cups-OutputBin=FaceUp
+number-up-layout=lrtb
+cups-number-up-layout=lrtb
+cups-job-priority=50
+media-type=Disc
+cups-Duplex=None
+cups-number-up=1
+cups-MediaType=Disc
+cover-before=none
+duplex=simplex
+collate=true
+cups-InputSlot=Auto
+print-at-time=
+output-bin=FaceUp
+cups-print-scaling=auto
+cover-after=none
+print-at=now
+printer=TS9500
+cups-job-sheets=none,none
+cups-cupsPrintQuality=Normal
+
+[Page Setup]
+PPDName=A4
+DisplayName=A4
+Width=210
+Height=297
+MarginTop=4.9999962700737841
+MarginBottom=4.9999999708599514
+MarginLeft=3.4000000609291923
+MarginRight=3.3999862670898433
+Orientation=portrait

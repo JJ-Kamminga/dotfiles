@@ -11,4 +11,7 @@
 *.tar
 *AppImage
 
-.config/nvim/pack/*
+home/.config/nvim/pack/*
+home/.config/superfile/theme/*.toml
+home/.config/tmux/plugins/*
+home/.config/tmux/plugins/tmux
