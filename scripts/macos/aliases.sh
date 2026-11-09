@@ -9,4 +9,4 @@ fi
 
 # macOS specific commands
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
-alias wallpaper="bash $HOME/dotfiles/macos/wallpaper.sh"
+alias wallpaper="bash $HOME/dotfiles/scripts/macos/wallpaper.sh"

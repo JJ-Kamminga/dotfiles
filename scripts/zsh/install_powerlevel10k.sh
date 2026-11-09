@@ -10,4 +10,4 @@ fi
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Link p10k configuration
-ln -sf ~/dotfiles/zsh/.p10k.zsh ~
+ln -sf ~/dotfiles/home/.p10k.zsh ~

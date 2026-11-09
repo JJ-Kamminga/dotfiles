@@ -9,6 +9,6 @@ if [ ! -d "$CONF_DIRECTORY" ]; then
     mkdir "$CONF_DIRECTORY"
 fi
 
-ln -sf ~/dotfiles/config/neowofetch/config.conf "$CONF_DIRECTORY"
+ln -sf ~/dotfiles/home/.config/neowofetch/config.conf "$CONF_DIRECTORY"
 
 echo "Installed hyfetch with fastfetch!"

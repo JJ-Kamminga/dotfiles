@@ -2,16 +2,16 @@
 # Configs                                                                     #
 ###############################################################################
 # bash
-ln -svi ~/dotfiles/bash/.bash_profile ~
+ln -svi ~/dotfiles/home/.bash_profile ~
 
 # zsh
-ln -svi ~/dotfiles/zsh/.zshrc ~
+ln -svi ~/dotfiles/home/.zshrc ~
 
 # git
-bash git/set_gitconfig.sh
+bash scripts/git/set_gitconfig.sh
 
 # macos defaults
-source macos/macosdefaults.sh
+source scripts/macos/macosdefaults.sh
 
 ###############################################################################
 # Installations                                                               #
@@ -56,10 +56,10 @@ read -e -p "Install Ruby?" choice [[ "$choice" == [Yy]* ]]\
 
 
 # oh-my-zsh
-source zsh/install_oh-my-zsh.sh
+source scripts/zsh/install_oh-my-zsh.sh
 # install general shell utilities
-source shell/install.sh
+source scripts/shell/install.sh
 
 # customisation
 ## wallpaper
-bash /Users/jkamminga/dotfiles/macos/wallpaper.sh
+bash $HOME/dotfiles/macos/wallpaper.sh

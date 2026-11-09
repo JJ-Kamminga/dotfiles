@@ -9,8 +9,8 @@
 # zsh
 read -e -p "(Re)install and configure zsh?" choice [[ "$choice" == [Yy]* ]]\
     &&\
-      . ~/dotfiles/ubuntu/install_zsh.sh\
-      . ~/dotfiles/shell/zsh/configure.sh\
+      . ~/dotfiles/scripts/ubuntu/install_zsh.sh\
+      . ~/dotfiles/scripts/shell/zsh/configure.sh\
     || echo "skipping zsh step."
 
 
@@ -19,7 +19,7 @@ read -e -p "(Re)install and configure zsh?" choice [[ "$choice" == [Yy]* ]]\
 ###############################################################################
 
 # bash
-ln -svi ~/dotfiles/bash/.bash_profile ~
+ln -svi ~/dotfiles/scripts/bash/.bash_profile ~
 
 # some test changes
 
@@ -27,10 +27,10 @@ ln -svi ~/dotfiles/bash/.bash_profile ~
 . ~/.bash_profile
 
 # git
-bash ~/dotfiles/git/set_gitconfig.sh
+bash ~/dotfiles/scripts/git/set_gitconfig.sh
 
-# ubuntu defaults
-. ~/dotfiles/ubuntu/ubuntudefaults.sh
+# scripts/ubuntu defaults
+. ~/dotfiles/scripts/ubuntu/ubuntudefaults.sh
 
 ###############################################################################
 # Installations                                                               #
@@ -41,7 +41,7 @@ sudo apt install flatpak gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # install general shell utilities
-. ~/dotfiles/shell/install.sh
+. ~/dotfiles/scripts/shell/install.sh
 
 # github
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
@@ -63,9 +63,9 @@ sudo apt-get install ripgrep
 sudo apt install gawk
 sudo apt install -y bat
 
-. ./ubuntu/install_scripts/fetch.sh
-. ./ubuntu/install_scripts/tmux.sh
-. ./ubuntu/install_scripts/ghostty.sh
+. ./scripts/ubuntu/install_scripts/fetch.sh
+. ./scripts/ubuntu/install_scripts/tmux.sh
+. ./scripts/ubuntu/install_scripts/ghostty.sh
 
 # signal desktop
 curl https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg;
@@ -78,13 +78,13 @@ sudo apt update && sudo apt install signal-desktop
 sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir ~/.config/tmux
-ln -sf ~/dotfiles/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
+ln -sf ~/dotfiles/home/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 
 # nvim
-. ./ubuntu/install_scripts/nvim.sh
+. ./scripts/ubuntu/install_scripts/nvim.sh
 
 # presenterm
-. ./ubuntu/install_scripts/presenterm.sh
+. ./scripts/ubuntu/install_scripts/presenterm.sh
 #
 # reload the shell
 . ~/.zshrc

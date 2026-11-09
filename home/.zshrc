@@ -101,7 +101,7 @@ plugins=(colored-man-pages last-working-dir urltools per-directory-history)
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Aliases are managed in ~/dotfiles/shell/source/load_aliases.sh
+# Aliases are managed in ~/dotfiles/scripts/shell/source/load_aliases.sh
 # For a full list of active aliases, run `alias`
 
 source $ZSH/oh-my-zsh.sh
@@ -117,7 +117,7 @@ fi
 
 # Source shared configurations
 for config in path.sh prompt.sh load_aliases.sh; do
-    source ~/dotfiles/shell/source/$config
+    source ~/dotfiles/scripts/shell/source/$config
 done
 
 # make batcat use terminal colors
