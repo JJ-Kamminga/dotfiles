@@ -133,7 +133,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # rust
-. "$HOME/.cargo/env"
+# zsh: dedupe PATH, then put rustup first
+typeset -U path
+path=("$HOME/.cargo/bin" $path)
 
 # docker
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
